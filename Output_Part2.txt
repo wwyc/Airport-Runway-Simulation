@@ -1,0 +1,425 @@
+ Enter 1 for to test Part 1, or 2 to test Part 2:
+2
+
+****Part 2: Simulation*****
+
+Bowen<221> runway
+Enter:
+   Time for a plane to land (in minutes): 3
+   Time for a plane to takeOff (in minutes): 2
+   Landing rate (planes per hour): 13
+   Takeoff Rate (planes per hour): 12
+   Emergency Rate (per hour): 11
+   How long to run the simulation (in minutes): 50
+
+Time = 0
+	Plane 1000 wants to land; added to landing queue 2  ;  1 in queue 2
+	Landing in runway 2: Plane 1000
+
+Time = 1
+
+Time = 2
+	Plane 1001 wants to takeoff; added to takeoff queue 2  ;  1 in queue 2
+
+Time = 3
+	Plane 1002 wants to land; added to landing queue 1  ;  1 in queue 1
+	Landing in runway 1: Plane 1002
+	Landing complete in runway 2  ; 0 in queue 2
+	Taking off in runway 2: Plane 1001
+
+Time = 4
+	Plane 1003 wants to land; added to landing queue 1  ;1 in queue 1
+
+Time = 5
+	Plane 1004 wants to takeoff; added to takeoff queue 2  ;  1 in queue 2
+	Takeoff complete in runway 2; 1 in queue 2
+
+Time = 6
+	Plane 1005 wants to land; added to landing queue 1  ;2 in queue 1
+	Plane 1006 wants to takeoff; added to takeoff queue 1  ;  1 in queue 1
+	Landing complete in runway 1 ; 2 in queue 1
+	Taking off in runway 2: Plane 1004
+
+Time = 7
+	Plane 1007 wants to land; added to landing queue 1  ;3 in queue 1
+	Plane 1008 wants to land; added to landing queue 2  ;  1 in queue 2
+	Landing in runway 1: Plane 1003
+
+Time = 8
+	Plane 1009 wants to land; added to landing queue 1  ;3 in queue 1
+	Plane 1010 wants to takeoff; added to takeoff queue 2  ;  1 in queue 2
+	Takeoff complete in runway 2; 1 in queue 2
+
+Time = 9
+	Plane 1011 wants to land; added to landing queue 2  ;  2 in queue 2
+	Plane 1012 wants to takeoff; added to takeoff queue 1  ;  2 in queue 1
+	Landing in runway 2: Plane 1008
+
+Time = 10
+	Plane 1013 wants to land; added to landing queue 2  ;  2 in queue 2
+	Landing complete in runway 1 ; 3 in queue 1
+
+Time = 11
+	Landing in runway 1: Plane 1005
+
+Time = 12
+	Landing complete in runway 2  ; 2 in queue 2
+
+Time = 13
+	Plane 1014 wants to land; added to landing queue 1  ;3 in queue 1
+	Plane 1015 wants to takeoff; added to takeoff queue 2  ;  2 in queue 2
+	Landing in runway 2: Plane 1011
+
+Time = 14
+	Plane 1016 wants to land; added to landing queue 2  ;  2 in queue 2
+	Plane 1017 wants to takeoff; added to takeoff queue 2  ;  3 in queue 2
+	Landing complete in runway 1 ; 3 in queue 1
+
+Time = 15
+	Plane 1018 wants to land; added to landing queue 2  ;  3 in queue 2
+	Landing in runway 1: Plane 1007
+
+Time = 16
+	Plane 1019 wants to land; added to landing queue 1  ;3 in queue 1
+	Landing complete in runway 2  ; 3 in queue 2
+
+Time = 17
+	Landing in runway 2: Plane 1013
+
+Time = 18
+	Plane 1020 wants to land; added to landing queue 2  ;  3 in queue 2
+	Landing complete in runway 1 ; 3 in queue 1
+
+Time = 19
+	Plane 1021 wants to land; added to landing queue 1  ;4 in queue 1
+	Plane 1022 wants to takeoff; added to takeoff queue 1  ;  3 in queue 1
+	Landing in runway 1: Plane 1009
+
+Time = 20
+	Plane 1023 wants to land; added to landing queue 1  ;4 in queue 1
+	Landing complete in runway 2  ; 3 in queue 2
+
+Time = 21
+	Landing in runway 2: Plane 1016
+
+Time = 22
+	Landing complete in runway 1 ; 4 in queue 1
+
+Time = 23
+	Landing in runway 1: Plane 1014
+
+Time = 24
+	Plane 1024 wants to land; added to landing queue 2  ;  3 in queue 2
+	Landing complete in runway 2  ; 3 in queue 2
+
+Time = 25
+	Plane 1025 wants to takeoff; added to takeoff queue 2  ;  4 in queue 2
+	Landing in runway 2: Plane 1018
+
+Time = 26
+	Plane 1026 wants to land; added to landing queue 1  ;4 in queue 1
+	Plane 1027 wants to land; added to landing queue 2  ;  3 in queue 2
+	Landing complete in runway 1 ; 4 in queue 1
+
+Time = 27
+	Plane 1028 wants to land; added to landing queue 2  ;  4 in queue 2
+	Plane 1029 wants to takeoff; added to takeoff queue 2  ;  5 in queue 2
+	Landing in runway 1: Plane 1019
+
+Time = 28
+	Plane 1030 wants to land; added to landing queue 1  ;4 in queue 1
+	Plane 1031 wants to land; added to landing queue 2  ;  5 in queue 2
+	Landing complete in runway 2  ; 5 in queue 2
+
+Time = 29
+	Plane 1032 wants to takeoff; added to takeoff queue 1  ;  4 in queue 1
+	Landing in runway 2: Plane 1020
+
+Time = 30
+	Landing complete in runway 1 ; 4 in queue 1
+
+Time = 31
+	Plane 1033 wants to land; added to landing queue 2  ;  5 in queue 2
+	Landing in runway 1: Plane 1021
+
+Time = 32
+	Landing complete in runway 2  ; 5 in queue 2
+	EMERGENCY: Runway 2 not in service; Merge landing and take off queues; Use runway 1 only!
+	Contents of landingQueue 1 before merge:  1023  1026  1030
+
+	Contents of landingQueue 2 before merge:  1024  1027  1028  1031  1033
+
+	Contents of landingQueue 1 after merge:  1023  1024  1026  1027  1028  1030  1031  1033
+
+	Contents of landingQueue 2 after merge:
+
+	Contents of takeoffQueue 1 before merge:  1006  1012  1022  1032
+
+	Contents of takeoffQueue 2 before merge:  1010  1015  1017  1025  1029
+
+	Contents of takeoffQueue 1 after merge:  1006  1010  1012  1015  1017  1022  1025  1029  1032
+
+	Contents of takeoffQueue 2 after merge:
+
+
+Time = 33
+
+Time = 34
+	Plane 1034 wants to land; added to landing queue 1  ;9 in queue 1
+	Landing complete in runway 1 ; 9 in queue 1
+
+Time = 35
+	Plane 1035 wants to land; added to landing queue 1  ;10 in queue 1
+	Landing in runway 1: Plane 1023
+
+Time = 36
+
+Time = 37
+	Plane 1036 wants to land; added to landing queue 1  ;10 in queue 1
+	Plane 1037 wants to takeoff; added to takeoff queue 1  ;  10 in queue 1
+
+Time = 38
+	Landing complete in runway 1 ; 10 in queue 1
+
+Time = 39
+	Landing in runway 1: Plane 1024
+
+Time = 40
+	Plane 1038 wants to land; added to landing queue 1  ;10 in queue 1
+
+Time = 41
+	Plane 1039 wants to takeoff; added to takeoff queue 1  ;  11 in queue 1
+
+Time = 42
+	Landing complete in runway 1 ; 10 in queue 1
+
+Time = 43
+	Landing in runway 1: Plane 1026
+
+Time = 44
+
+Time = 45
+
+Time = 46
+	Landing complete in runway 1 ; 9 in queue 1
+
+Time = 47
+	Landing in runway 1: Plane 1027
+
+Time = 48
+	Plane 1040 wants to takeoff; added to takeoff queue 1  ;  12 in queue 1
+
+Time = 49
+	Plane 1041 wants to land; added to landing queue 1  ;9 in queue 1
+	Plane 1042 wants to takeoff; added to takeoff queue 1  ;  13 in queue 1
+
+Time = 50
+	No new takeoffs or landings will be generated
+	Landing complete in runway 1 ; 9 in queue 1
+
+Time = 51
+	Landing in runway 1: Plane 1028
+
+Time = 52
+
+Time = 53
+
+Time = 54
+	Landing complete in runway 1 ; 8 in queue 1
+
+Time = 55
+	Landing in runway 1: Plane 1030
+
+Time = 56
+
+Time = 57
+
+Time = 58
+	Landing complete in runway 1 ; 7 in queue 1
+
+Time = 59
+	Landing in runway 1: Plane 1031
+
+Time = 60
+
+Time = 61
+
+Time = 62
+	Landing complete in runway 1 ; 6 in queue 1
+
+Time = 63
+	Landing in runway 1: Plane 1033
+
+Time = 64
+
+Time = 65
+
+Time = 66
+	Landing complete in runway 1 ; 5 in queue 1
+
+Time = 67
+	Landing in runway 1: Plane 1034
+
+Time = 68
+
+Time = 69
+
+Time = 70
+	Landing complete in runway 1 ; 4 in queue 1
+
+Time = 71
+	Landing in runway 1: Plane 1035
+
+Time = 72
+
+Time = 73
+
+Time = 74
+	Landing complete in runway 1 ; 3 in queue 1
+
+Time = 75
+	Landing in runway 1: Plane 1036
+
+Time = 76
+
+Time = 77
+
+Time = 78
+	Landing complete in runway 1 ; 2 in queue 1
+
+Time = 79
+	Landing in runway 1: Plane 1038
+
+Time = 80
+
+Time = 81
+
+Time = 82
+	Landing complete in runway 1 ; 1 in queue 1
+
+Time = 83
+	Landing in runway 1: Plane 1041
+
+Time = 84
+
+Time = 85
+
+Time = 86
+	Landing complete in runway 1 ; 0 in queue 1
+	Taking off in runway 1: Plane 1006
+
+Time = 87
+
+Time = 88
+	Takeoff complete in runway 1; 12 in queue 1
+
+Time = 89
+	Taking off in runway 1: Plane 1010
+
+Time = 90
+
+Time = 91
+	Takeoff complete in runway 1; 11 in queue 1
+
+Time = 92
+	Taking off in runway 1: Plane 1012
+
+Time = 93
+
+Time = 94
+	Takeoff complete in runway 1; 10 in queue 1
+
+Time = 95
+	Taking off in runway 1: Plane 1015
+
+Time = 96
+
+Time = 97
+	Takeoff complete in runway 1; 9 in queue 1
+
+Time = 98
+	Taking off in runway 1: Plane 1017
+
+Time = 99
+
+Time = 100
+	Takeoff complete in runway 1; 8 in queue 1
+
+Time = 101
+	Taking off in runway 1: Plane 1022
+
+Time = 102
+
+Time = 103
+	Takeoff complete in runway 1; 7 in queue 1
+
+Time = 104
+	Taking off in runway 1: Plane 1025
+
+Time = 105
+
+Time = 106
+	Takeoff complete in runway 1; 6 in queue 1
+
+Time = 107
+	Taking off in runway 1: Plane 1029
+
+Time = 108
+
+Time = 109
+	Takeoff complete in runway 1; 5 in queue 1
+
+Time = 110
+	Taking off in runway 1: Plane 1032
+
+Time = 111
+
+Time = 112
+	Takeoff complete in runway 1; 4 in queue 1
+
+Time = 113
+	Taking off in runway 1: Plane 1037
+
+Time = 114
+
+Time = 115
+	Takeoff complete in runway 1; 3 in queue 1
+
+Time = 116
+	Taking off in runway 1: Plane 1039
+
+Time = 117
+
+Time = 118
+	Takeoff complete in runway 1; 2 in queue 1
+
+Time = 119
+	Taking off in runway 1: Plane 1040
+
+Time = 120
+
+Time = 121
+	Takeoff complete in runway 1; 1 in queue 1
+
+Time = 122
+	Taking off in runway 1: Plane 1042
+
+Time = 123
+
+Time = 124
+	Takeoff complete in runway 1; 0 in queue 1
+
+End of program.
+
+
+STATISTICS - QUEUE 1:
+Maximum number of planes in landing queue 1 was: 10
+Maximum number of planes in takeoff queue 1 was: 13
+
+STATISTICS - QUEUE 2:
+Maximum number of planes in landing queue 2 was: 5
+Maximum number of planes in takeoff queue 2 was: 5
+
+STATISTICS - TOTAL FOR QUEUE 1 & 2:
+Average minutes spent waiting to land total: 19.5357
+Average minutes spent waiting to takeoff total: 70.6
